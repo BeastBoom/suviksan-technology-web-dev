@@ -1,0 +1,3626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Suviksan Technologies - Our Clients and Success Stories"
+    />
+    <meta
+      name="keywords"
+      content="IT solutions, clients, partnerships, case studies, success stories"
+    />
+    <title>Our Clients | Suviksan Technologies</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      /**
+         * ===============================
+         * CSS VARIABLES & RESET STYLES
+         * ===============================
+         */
+      :root {
+        /* Main colors */
+        --primary: #0056b3;
+        --primary-dark: #004494;
+        --primary-light: #0074e4;
+        --secondary: #ff6b00;
+        --secondary-dark: #e65c00;
+        --secondary-light: #ff8c33;
+
+        /* Neutral colors */
+        --dark: #1a1a1a;
+        --dark-75: #404040;
+        --dark-50: #676767;
+        --light: #f8f9fa;
+        --light-95: #f0f0f0;
+        --light-90: #e6e6e6;
+        --gray: #6c757d;
+        --gray-light: #e9ecef;
+        --gray-dark: #495057;
+
+        /* Semantic colors */
+        --success: #28a745;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --info: #17a2b8;
+
+        /* Effects */
+        --gradient-primary: linear-gradient(135deg, #0056b3 0%, #0088cc 100%);
+        --gradient-secondary: linear-gradient(135deg, #ff6b00 0%, #ff8c33 100%);
+        --gradient-dark: linear-gradient(to right, #1a1a1a, #333333);
+        --box-shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+        --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        --box-shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.15);
+
+        /* Transitions */
+        --transition-fast: all 0.2s ease;
+        --transition: all 0.3s ease;
+        --transition-slow: all 0.5s ease;
+        --easing-smooth: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        /* Spacing */
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+        --spacing-xxl: 3rem;
+
+        /* Border radius */
+        --radius-sm: 0.25rem;
+        --radius-md: 0.5rem;
+        --radius-lg: 1rem;
+        --radius-pill: 50rem;
+        --radius-circle: 50%;
+
+        /* Typography */
+        --font-family-heading: "Ubuntu", sans-serif;
+        --font-family-body: "Inter", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+          sans-serif;
+        --font-size-xs: 0.75rem; /* 12px */
+        --font-size-sm: 0.875rem; /* 14px */
+        --font-size-md: 1rem; /* 16px */
+        --font-size-lg: 1.125rem; /* 18px */
+        --font-size-xl: 1.25rem; /* 20px */
+        --font-size-xxl: 1.5rem; /* 24px */
+        --font-size-h1: 2.5rem; /* 40px */
+        --font-size-h2: 2rem; /* 32px */
+        --font-size-h3: 1.75rem; /* 28px */
+        --font-size-h4: 1.5rem; /* 24px */
+        --font-size-h5: 1.25rem; /* 20px */
+        --font-size-h6: 1rem; /* 16px */
+
+        /* Z-index layers */
+        --z-index-dropdown: 1000;
+        --z-index-sticky: 1020;
+        --z-index-fixed: 1030;
+        --z-index-modal-backdrop: 1040;
+        --z-index-modal: 1050;
+        --z-index-popover: 1060;
+        --z-index-tooltip: 1070;
+      }
+
+      /* CSS Reset & Base Styles */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      body {
+        font-family: var(--font-family-body);
+        font-size: var(--font-size-md);
+        line-height: 1.6;
+        color: var(--dark-75);
+        background-color: #ffffff;
+        overflow-x: hidden;
+        min-height: 100vh;
+        position: relative;
+      }
+
+      /* Focus styles for accessibility */
+      :focus-visible {
+        outline: 3px solid var(--primary);
+        outline-offset: 2px;
+      }
+
+      /* Basic typography */
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: var(--font-family-heading);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-md);
+        color: var(--dark);
+      }
+
+      h1 {
+        font-size: var(--font-size-h1);
+      }
+      h2 {
+        font-size: var(--font-size-h2);
+      }
+      h3 {
+        font-size: var(--font-size-h3);
+      }
+      h4 {
+        font-size: var(--font-size-h4);
+      }
+      h5 {
+        font-size: var(--font-size-h5);
+      }
+      h6 {
+        font-size: var(--font-size-h6);
+      }
+
+      h2 {
+        position: relative;
+        display: inline-block;
+        transition: var(--transition);
+      }
+
+      h2:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 60px;
+        height: 3px;
+        background: var(--primary);
+        transition: var(--transition);
+      }
+
+      h2:hover:after {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: var(--spacing-lg);
+        color: var(--dark-50);
+        transition: var(--transition);
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      a:hover {
+        color: var(--secondary);
+      }
+
+      ul,
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      img,
+      svg,
+      video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+        padding: 0;
+      }
+
+      /**
+         * ===============================
+         * LAYOUT COMPONENTS
+         * ===============================
+         */
+      .section {
+        padding: 5rem 0;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-lg);
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+      }
+
+      .col {
+        flex: 1;
+        padding: 0 15px;
+        min-width: 0;
+      }
+
+      @media (max-width: 767px) {
+        .row {
+          flex-direction: column;
+        }
+
+        .col {
+          width: 100%;
+        }
+      }
+
+      /**
+         * ===============================
+         * ANIMATIONS & TRANSITIONS
+         * ===============================
+         */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulseGlow {
+        0% {
+          box-shadow: 0 0 0 0 rgba(0, 86, 179, 0.4);
+        }
+        70% {
+          box-shadow: 0 0 0 15px rgba(0, 86, 179, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(0, 86, 179, 0);
+        }
+      }
+
+      @keyframes floatY {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+
+      @keyframes scaleInOut {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes borderPulse {
+        0% {
+          border-color: rgba(0, 86, 179, 0.5);
+        }
+        50% {
+          border-color: rgba(0, 86, 179, 1);
+        }
+        100% {
+          border-color: rgba(0, 86, 179, 0.5);
+        }
+      }
+
+      .delay-1 {
+        transition-delay: 0.2s;
+        animation-delay: 0.2s;
+      }
+      .delay-2 {
+        transition-delay: 0.4s;
+        animation-delay: 0.4s;
+      }
+      .delay-3 {
+        transition-delay: 0.6s;
+        animation-delay: 0.6s;
+      }
+      .delay-4 {
+        transition-delay: 0.8s;
+        animation-delay: 0.8s;
+      }
+      .delay-5 {
+        transition-delay: 1s;
+        animation-delay: 1s;
+      }
+
+      /* Animate elements when they become visible */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .animate-on-scroll.animated {
+        animation: fadeInUp 0.5s forwards ease;
+        opacity: 1;
+      }
+
+      /**
+         * ===============================
+         * TOP BAR
+         * ===============================
+         */
+      .top-bar {
+        background-color: var(--primary);
+        color: white;
+        padding: 5px 0; /* Reduced from 10px to 5px */
+        font-size: var(--font-size-sm);
+        position: relative;
+        z-index: var(--z-index-fixed);
+      }
+
+      .top-bar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        flex-wrap: nowrap; /* Ensures single line */
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .contact-info-item {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+      }
+
+      .contact-info i {
+        margin-right: 8px;
+        transition: var(--transition);
+      }
+
+      .contact-info i:hover {
+        color: var(--secondary);
+        transform: scale(1.2);
+      }
+
+      .separator {
+        margin: 0 15px;
+        opacity: 0.5;
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+      }
+
+      .social-links span {
+        margin-right: 10px;
+      }
+
+      .social-links-list {
+        display: flex;
+        align-items: center;
+      }
+
+      .social-links a {
+        color: white;
+        margin-left: 12px;
+        transition: var(--transition);
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-circle);
+      }
+
+      .social-links a:hover {
+        color: var(--secondary);
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.1);
+      }
+      /**
+         * ===============================
+         * NAVIGATION
+         * ===============================
+         */
+      .navbar {
+        background-color: white;
+        box-shadow: var(--box-shadow-sm);
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: var(--z-index-sticky);
+        transition: all 0.4s var(--easing-smooth);
+      }
+
+      .navbar.scrolled {
+        padding: 10px 0;
+        box-shadow: var(--box-shadow);
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo {
+        display: block;
+        height: 50px;
+        transition: all 0.4s var(--easing-smooth);
+      }
+
+      .logo img {
+        height: 100%;
+        width: auto;
+        transition: var(--transition);
+      }
+
+      .navbar.scrolled .logo {
+        height: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links li {
+        position: relative;
+        margin: 0 5px;
+      }
+
+      .nav-links a {
+        color: var(--dark);
+        font-weight: 500;
+        padding: 10px 15px;
+        display: block;
+        position: relative;
+        transition: var(--transition);
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+
+      .nav-links a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        transition: var(--transition);
+        transform: translateX(-50%);
+      }
+
+      .nav-links a:hover:after {
+        width: 70%;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown > a {
+        display: flex;
+        align-items: center;
+      }
+
+      .dropdown i {
+        font-size: var(--font-size-xs);
+        margin-left: 4px;
+        transition: var(--transition);
+      }
+
+      .dropdown:hover i {
+        transform: rotate(180deg);
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        box-shadow: var(--box-shadow);
+        min-width: 220px;
+        border-radius: var(--radius-md);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        z-index: var(--z-index-dropdown);
+        padding: 10px 0;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .dropdown-menu li {
+        margin: 0;
+        width: 100%;
+      }
+
+      .dropdown-menu a {
+        padding: 12px 25px;
+        color: var(--dark-75);
+        font-weight: 400;
+        border-left: 3px solid transparent;
+        transition: var(--transition);
+      }
+
+      .dropdown-menu a:hover {
+        background-color: var(--light);
+        color: var(--primary);
+        border-left-color: var(--primary);
+      }
+
+      .btn-toggle-menu {
+        background: none;
+        border: none;
+        font-size: var(--font-size-xl);
+        color: var(--dark);
+        cursor: pointer;
+        transition: var(--transition);
+        width: 40px;
+        height: 40px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-md);
+      }
+
+      .btn-toggle-menu:hover {
+        color: var(--primary);
+        background: var(--light);
+      }
+
+      /**
+         * ===============================
+         * CLIENTS PAGE HERO SECTION
+         * ===============================
+         */
+      .clients-hero {
+        position: relative;
+        background: var(--gradient-primary);
+        color: white;
+        padding: 6rem 0;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .clients-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        z-index: 0;
+        opacity: 0.3;
+      }
+
+      .clients-hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .clients-hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        color: white;
+        position: relative;
+        display: inline-block;
+      }
+
+      .clients-hero h1::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--secondary);
+        border-radius: 2px;
+      }
+
+      .clients-hero p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .hero-stat {
+        text-align: center;
+        animation: fadeInUp 0.5s forwards;
+      }
+
+      .hero-stat:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .hero-stat:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .hero-stat:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+
+      .hero-stat-number {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+        color: white;
+        position: relative;
+        display: inline-block;
+      }
+
+      .hero-stat-text {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+      }
+
+      .hero-shapes {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .hero-shape {
+        position: absolute;
+        opacity: 0.1;
+        animation: floatY 8s infinite ease-in-out;
+      }
+
+      .hero-shape-1 {
+        top: 20%;
+        left: 10%;
+        width: 60px;
+        height: 60px;
+        background: white;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        animation-delay: 0s;
+      }
+
+      .hero-shape-2 {
+        top: 60%;
+        left: 80%;
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-radius: 42% 58% 40% 60% / 55% 52% 48% 45%;
+        animation-delay: 0.5s;
+      }
+
+      .hero-shape-3 {
+        top: 30%;
+        left: 85%;
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: 50%;
+        animation-delay: 1s;
+      }
+
+      .hero-shape-4 {
+        top: 70%;
+        left: 5%;
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        animation-delay: 1.5s;
+      }
+
+      /**
+         * ===============================
+         * CLIENT LOGOS SHOWCASE
+         * ===============================
+         */
+      .client-logos-section {
+        padding: 6rem 0;
+        background: white;
+        position: relative;
+      }
+
+      .client-logos-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+      }
+
+      .client-logos-content h2 {
+        margin-bottom: 1.5rem;
+      }
+
+      .client-logos-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .client-logo-item {
+        flex: 0 0 calc(20% - 2rem);
+        min-width: 180px;
+        height: 120px;
+        background: white;
+        border-radius: var(--radius-md);
+        box-shadow: var(--box-shadow-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+        cursor: pointer;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      /* Animated border on hover */
+      .client-logo-item::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        background: var(--gradient-primary);
+        z-index: -1;
+        opacity: 0;
+        transition: var(--transition);
+        border-radius: var(--radius-md);
+      }
+
+      .client-logo-item:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--box-shadow);
+        border-color: transparent;
+      }
+
+      .client-logo-item:hover::after {
+        opacity: 1;
+      }
+
+      .client-logo-item img {
+        max-width: 100%;
+        max-height: 80px;
+        transition: filter 0.3s ease, transform 0.3s ease;
+        filter: grayscale(100%) opacity(60%);
+      }
+
+      .client-logo-item:hover img {
+        filter: grayscale(0%) opacity(100%);
+        transform: scale(1.05);
+      }
+
+      /* Staggered animation for logos */
+      .client-logo-animation {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      .client-logo-animation.animated {
+        animation: fadeInUp 0.5s forwards ease;
+      }
+
+      .client-logo-animation:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .client-logo-animation:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .client-logo-animation:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .client-logo-animation:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .client-logo-animation:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .client-logo-animation:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      .client-logo-animation:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      .client-logo-animation:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+      .client-logo-animation:nth-child(9) {
+        animation-delay: 0.9s;
+      }
+      .client-logo-animation:nth-child(10) {
+        animation-delay: 1s;
+      }
+
+      /**
+         * ===============================
+         * CLIENT SUCCESS STORIES
+         * ===============================
+         */
+      .success-stories-section {
+        background: var(--light);
+        padding: 6rem 0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .success-stories-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 4rem;
+      }
+
+      .stories-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .stories-tab-button {
+        background: white;
+        border: 2px solid transparent;
+        border-radius: var(--radius-pill);
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        color: var(--dark-50);
+        cursor: pointer;
+        transition: var(--transition);
+        box-shadow: var(--box-shadow-sm);
+      }
+
+      .stories-tab-button:hover {
+        color: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: var(--box-shadow);
+      }
+
+      .stories-tab-button.active {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+        animation: pulseGlow 2s infinite;
+      }
+
+      .success-story-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .success-story-card {
+        flex: 0 0 calc(33.333% - 2rem);
+        min-width: 300px;
+        background: white;
+        border-radius: var(--radius-md);
+        box-shadow: var(--box-shadow-sm);
+        overflow: hidden;
+        transition: var(--transition);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      .success-story-card.animated {
+        animation: fadeInUp 0.5s forwards ease;
+      }
+
+      .success-story-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--box-shadow);
+      }
+
+      .story-card-image {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .story-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .success-story-card:hover .story-card-image img {
+        transform: scale(1.05);
+      }
+
+      .story-card-category {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: var(--primary);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: var(--radius-pill);
+        font-size: var(--font-size-xs);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .story-card-content {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .success-story-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+        transition: var(--transition);
+      }
+
+      .success-story-card:hover h3 {
+        color: var(--primary);
+      }
+
+      .story-card-description {
+        color: var(--dark-50);
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+        flex: 1;
+      }
+
+      .story-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: auto;
+        padding-top: 1rem;
+        border-top: 1px solid var(--light-90);
+      }
+
+      .story-card-company {
+        display: flex;
+        align-items: center;
+      }
+
+      .story-company-logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 0.5rem;
+      }
+
+      .story-company-name {
+        font-weight: 600;
+        color: var(--dark-75);
+        font-size: 0.9rem;
+      }
+
+      .story-card-link {
+        font-weight: 500;
+        font-size: 0.9rem;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        transition: var(--transition);
+      }
+
+      .story-card-link i {
+        margin-left: 0.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .story-card-link:hover {
+        color: var(--secondary);
+      }
+
+      .story-card-link:hover i {
+        transform: translateX(5px);
+      }
+
+      /**
+         * ===============================
+         * TESTIMONIALS SECTION
+         * ===============================
+         */
+      .testimonials-section {
+        padding: 6rem 0;
+        background: white;
+        position: relative;
+      }
+
+      .testimonials-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 4rem;
+      }
+
+      .testimonials-slider-container {
+        position: relative;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .testimonials-slider {
+        overflow: hidden;
+        padding: 3rem 0 1rem;
+      }
+
+      .testimonials-slide-track {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .testimonial-slide {
+        flex: 0 0 100%;
+        padding: 0 15px;
+      }
+
+      .testimonial-card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: var(--radius-md);
+        box-shadow: var(--box-shadow);
+        position: relative;
+        transition: var(--transition);
+        border: 1px solid var(--light-90);
+      }
+
+      .testimonial-card::before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: -30px;
+        left: 30px;
+        width: 60px;
+        height: 60px;
+        background: var(--primary);
+        color: white;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: var(--box-shadow);
+      }
+
+      .testimonial-content {
+        font-style: italic;
+        margin-bottom: 2rem;
+        position: relative;
+        color: var(--dark-50);
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+      }
+
+      .testimonial-author-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 1rem;
+      }
+
+      .testimonial-author-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .testimonial-author-info {
+        flex: 1;
+      }
+
+      .testimonial-author-name {
+        font-weight: 700;
+        color: var(--dark);
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .testimonial-author-title {
+        color: var(--dark-50);
+        font-size: 0.9rem;
+      }
+
+      .testimonial-company {
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+
+      .testimonial-company-logo {
+        height: 20px;
+        width: auto;
+        margin-right: 0.5rem;
+      }
+
+      .testimonial-company-name {
+        font-weight: 600;
+        color: var(--dark-75);
+        font-size: 0.9rem;
+      }
+
+      .testimonials-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .testimonial-nav-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid var(--light-90);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: var(--transition);
+        box-shadow: var(--box-shadow-sm);
+      }
+
+      .testimonial-nav-button:hover {
+        background: var(--primary);
+        color: white;
+        border-color: var(--primary);
+        transform: translateY(-3px);
+        box-shadow: var(--box-shadow);
+      }
+
+      .testimonial-dots {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .testimonial-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--light-90);
+        cursor: pointer;
+        transition: var(--transition);
+      }
+
+      .testimonial-dot.active {
+        background: var(--primary);
+        transform: scale(1.2);
+      }
+
+      /**
+         * ===============================
+         * PARTNER WITH US CTA SECTION
+         * ===============================
+         */
+      .partner-cta-section {
+        padding: 6rem 0;
+        background: var(--gradient-primary);
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .partner-cta-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+        z-index: 0;
+      }
+
+      .partner-cta-content {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        padding: 0 20px;
+      }
+
+      .partner-cta-content h2 {
+        color: white;
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+
+      .partner-cta-content h2:after {
+        background: var(--secondary);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .partner-cta-content p {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .partner-cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: var(--radius-pill);
+        font-weight: 600;
+        font-size: var(--font-size-sm);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: var(--transition);
+        cursor: pointer;
+        text-align: center;
+        border: 2px solid transparent;
+        box-shadow: var(--box-shadow-sm);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+        z-index: 1;
+      }
+
+      .btn:hover::before {
+        width: 200%;
+        height: 200%;
+        opacity: 1;
+      }
+
+      .btn > * {
+        position: relative;
+        z-index: 2;
+      }
+
+      .btn-primary {
+        background: white;
+        color: var(--primary);
+        border-color: white;
+      }
+
+      .btn-primary:hover {
+        background: var(--light-95);
+        border-color: var(--light-95);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: white;
+        border-color: white;
+      }
+
+      .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+      }
+
+      /**
+         * ===============================
+         * GLOBAL PRESENCE SECTION
+         * ===============================
+         */
+      .global-presence-section {
+        padding: 6rem 0;
+        background: white;
+        position: relative;
+      }
+
+      .global-presence-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+      }
+
+      .global-map-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .global-map {
+        width: 100%;
+        position: relative;
+      }
+
+      .global-map img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .map-location {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--primary);
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        box-shadow: 0 0 0 rgba(0, 86, 179, 0.4);
+        animation: pulseGlow 2s infinite;
+      }
+
+      .map-location::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: scale(1);
+        background: var(--primary);
+        opacity: 0.7;
+        z-index: -1;
+        animation: scaleInOut 2s infinite;
+      }
+
+      .map-location:hover {
+        background: var(--secondary);
+      }
+
+      .location-tooltip {
+        position: absolute;
+        bottom: calc(100% + 15px);
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        background: white;
+        border-radius: var(--radius-md);
+        box-shadow: var(--box-shadow);
+        padding: 0.75rem 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        min-width: 150px;
+        pointer-events: none;
+      }
+
+      .location-tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+      }
+
+      .map-location:hover .location-tooltip {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+      }
+
+      .location-name {
+        font-weight: 600;
+        color: var(--dark);
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+      }
+
+      .location-address {
+        font-size: 0.8rem;
+        color: var(--dark-50);
+      }
+
+      /* Define location positions */
+      .location-us {
+        top: 35%;
+        left: 25%;
+        animation-delay: 0.1s;
+      }
+      .location-india {
+        top: 48%;
+        left: 70%;
+        animation-delay: 0.3s;
+      }
+      .location-uk {
+        top: 30%;
+        left: 47%;
+        animation-delay: 0.5s;
+      }
+      .location-germany {
+        top: 33%;
+        left: 50%;
+        animation-delay: 0.7s;
+      }
+      .location-japan {
+        top: 40%;
+        left: 82%;
+        animation-delay: 0.9s;
+      }
+
+      /**
+         * ===============================
+         * FOOTER SECTION
+         * ===============================
+         */
+      .site-footer {
+        background: var(--gradient-dark);
+        color: #f5f5f5;
+        padding-top: 60px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        padding: 0 20px 50px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .footer-about p {
+        color: #bbb;
+        margin-top: 20px;
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+
+      .footer-logo {
+        display: block;
+        height: 55px;
+        margin-bottom: 15px;
+      }
+
+      .footer-logo img {
+        height: 100%;
+        width: auto;
+        transition: var(--transition);
+      }
+
+      .footer-logo:hover img {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+      }
+
+      .footer-links h4,
+      .footer-contact h4 {
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 1.3rem;
+        position: relative;
+        padding-bottom: 12px;
+        display: inline-block;
+      }
+
+      .footer-links h4:after,
+      .footer-contact h4:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--secondary);
+        transition: var(--transition);
+      }
+
+      .footer-links h4:hover:after,
+      .footer-contact h4:hover:after {
+        width: 100%;
+      }
+
+      /* Update the footer links CSS in styles.css (around line 1508) */
+      .footer-links ul li {
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 15px; /* Space for the line */
+      }
+
+      .footer-links ul li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 3px;
+        background: transparent;
+        transition: var(--transition);
+      }
+
+      .footer-links ul li:hover::before {
+        background: var(--secondary);
+      }
+
+      .footer-links ul li a {
+        color: #bbb;
+        transition: var(--transition);
+        display: inline-block;
+        position: relative;
+      }
+
+      .footer-links ul li:hover a {
+        color: var(--secondary);
+        transform: translateX(5px);
+      }
+
+      .footer-contact ul li {
+        margin-bottom: 18px;
+        display: flex;
+        align-items: flex-start;
+        color: #bbb;
+      }
+
+      .footer-contact i {
+        color: var(--secondary);
+        margin-right: 15px;
+        font-size: 1.3rem;
+        margin-top: 3px;
+        transition: var(--transition);
+      }
+
+      .footer-contact li:hover i {
+        transform: scale(1.2);
+      }
+
+      .footer-social {
+        margin-top: 30px;
+      }
+
+      .footer-social-title {
+        color: #fff;
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        display: block;
+      }
+
+      .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .footer-social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: #f5f5f5;
+        transition: var(--transition);
+        font-size: 1.2rem;
+      }
+
+      .footer-social a:hover {
+        background: var(--secondary);
+        color: #fff;
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(255, 107, 0, 0.3);
+      }
+
+      /* Footer decorative elements */
+      .footer-decoration {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0.03;
+        background-image: radial-gradient(circle, #ffffff 2px, transparent 2px);
+        background-size: 30px 30px;
+      }
+
+      .footer-bottom {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 25px 0;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .footer-bottom p {
+        color: #999;
+        margin: 0;
+        font-size: 0.9rem;
+        transition: var(--transition);
+      }
+
+      .footer-bottom p:hover {
+        color: #fff;
+      }
+
+      /**
+         * ===============================
+         * SCROLL TO TOP BUTTON
+         * ===============================
+         */
+      .scroll-to-top {
+        position: fixed;
+        bottom: -60px;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--font-size-lg);
+        cursor: pointer;
+        transition: all 0.5s ease;
+        z-index: var(--z-index-fixed);
+        opacity: 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .scroll-to-top.visible {
+        bottom: 30px;
+        opacity: 1;
+      }
+
+      .scroll-to-top:hover {
+        background: var(--secondary);
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /**
+         * ===============================
+         * RESPONSIVE STYLES
+         * ===============================
+         */
+      @media (max-width: 1200px) {
+        .container {
+          padding: 0 30px;
+        }
+
+        .clients-hero h1 {
+          font-size: 3rem;
+        }
+
+        .hero-stat-number {
+          font-size: 3rem;
+        }
+      }
+
+      @media (max-width: 991px) {
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .section {
+          padding: 4rem 0;
+        }
+
+        .clients-hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .clients-hero p {
+          font-size: 1.1rem;
+        }
+
+        .hero-stats {
+          gap: 2rem;
+        }
+
+        .hero-stat-number {
+          font-size: 2.5rem;
+        }
+
+        .top-bar-container {
+          flex-direction: column;
+          gap: 3px;
+        }
+
+        .social-links {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 0.95rem;
+        }
+
+        h2 {
+          font-size: 1.7rem;
+        }
+
+        .clients-hero {
+          padding: 4rem 0;
+        }
+
+        .clients-hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero-stats {
+          gap: 1.5rem;
+        }
+
+        .hero-stat-number {
+          font-size: 2.2rem;
+        }
+
+        .btn-toggle-menu {
+          display: flex;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 0;
+          right: -300px;
+          width: 280px;
+          height: 100vh;
+          background: white;
+          box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 80px 0 30px;
+          transition: right 0.4s ease-in-out;
+          z-index: var(--z-index-modal);
+          overflow-y: auto;
+        }
+
+        .nav-links.active {
+          right: 0;
+        }
+
+        .nav-links li {
+          width: 100%;
+          margin: 0;
+        }
+
+        .nav-links a {
+          padding: 12px 25px;
+          width: 100%;
+          border-left: 3px solid transparent;
+        }
+
+        .nav-links a:hover {
+          background: var(--light);
+          border-left-color: var(--primary);
+        }
+
+        .nav-links a:after {
+          display: none;
+        }
+
+        .dropdown-menu {
+          position: static;
+          opacity: 1;
+          visibility: visible;
+          transform: none;
+          box-shadow: none;
+          max-height: 0;
+          overflow: hidden;
+          padding: 0;
+          transition: max-height 0.3s ease;
+          background: var(--light);
+          border-radius: 0;
+          width: 100%;
+        }
+
+        .dropdown.active .dropdown-menu {
+          max-height: 500px;
+          padding: 10px 0;
+        }
+
+        .dropdown-menu a {
+          padding-left: 50px;
+        }
+
+        .footer-container {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .footer-logo {
+          margin: 0 auto 15px;
+        }
+
+        .footer-links h4:after,
+        .footer-contact h4:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .footer-links ul li a {
+          padding-left: 0;
+        }
+
+        .footer-contact ul li {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .footer-contact i {
+          margin: 0 0 10px;
+        }
+
+        .footer-social {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .social-icons {
+          justify-content: center;
+        }
+
+        .testimonial-card {
+          padding: 1.5rem;
+        }
+
+        .testimonial-content {
+          font-size: 0.95rem;
+        }
+
+        .testimonial-author-image {
+          width: 50px;
+          height: 50px;
+        }
+
+        .stories-tab-button {
+          padding: 0.5rem 1rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .section,
+        .clients-hero,
+        .client-logos-section,
+        .success-stories-section,
+        .testimonials-section,
+        .partner-cta-section,
+        .global-presence-section {
+          padding: 3rem 0;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .clients-hero h1 {
+          font-size: 1.8rem;
+        }
+
+        .clients-hero p {
+          font-size: 1rem;
+        }
+
+        .hero-stats {
+          gap: 1rem;
+          justify-content: space-around;
+        }
+
+        .hero-stat {
+          flex-basis: 45%;
+        }
+
+        .hero-stat-number {
+          font-size: 2rem;
+        }
+
+        .client-logo-item {
+          flex: 0 0 100%;
+          height: 100px;
+        }
+
+        .partner-cta-buttons {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .partner-cta-buttons .btn {
+          width: 100%;
+        }
+
+        .testimonial-card::before {
+          width: 50px;
+          height: 50px;
+          font-size: 1.2rem;
+          top: -25px;
+        }
+
+        .testimonial-content {
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      /**
+         * ===============================
+         * ACCESSIBILITY STYLES
+         * ===============================
+         */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      /* Add this to your styles.css file */
+      /* Live Chat Widget */
+      .chat-widget {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        z-index: var(--z-index-modal);
+        transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+        box-shadow: var(--box-shadow-lg);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        background-color: white;
+      }
+
+      .chat-widget.open {
+        width: 350px;
+        height: 500px;
+        border-radius: 12px;
+      }
+
+      .chat-button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: none;
+        outline: none;
+        font-size: 24px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .chat-button:hover {
+        background: var(--primary-dark);
+        transform: scale(1.05);
+      }
+
+      .chat-button .fa-times {
+        display: none;
+      }
+
+      .open .chat-button .fa-comment-dots {
+        display: none;
+      }
+
+      .open .chat-button .fa-times {
+        display: block;
+      }
+
+      .chat-header {
+        display: none;
+        height: 60px;
+        background: var(--primary);
+        color: white;
+        padding: 0 15px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .open .chat-header {
+        display: flex;
+      }
+
+      .chat-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+      }
+
+      .chat-toggle {
+        background: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .chat-body {
+        display: none;
+        flex-direction: column;
+        height: calc(100% - 60px);
+      }
+
+      .open .chat-body {
+        display: flex;
+      }
+
+      .chat-messages {
+        flex: 1;
+        padding: 15px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .message {
+        display: flex;
+        margin-bottom: 10px;
+      }
+
+      .message.user {
+        justify-content: flex-end;
+      }
+
+      .message-content {
+        max-width: 80%;
+        padding: 10px 15px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .message.system .message-content {
+        background: #f0f2f5;
+      }
+
+      .message.user .message-content {
+        background: var(--primary);
+        color: white;
+      }
+
+      .message-content p {
+        margin: 0 0 5px;
+        line-height: 1.4;
+      }
+
+      .message-time {
+        display: block;
+        font-size: 11px;
+        opacity: 0.7;
+        text-align: right;
+      }
+
+      .chat-input {
+        display: flex;
+        padding: 15px;
+        background: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+      }
+
+      .chat-input textarea {
+        flex: 1;
+        padding: 12px 15px;
+        border: 1px solid #e9ecef;
+        border-radius: 20px;
+        resize: none;
+        outline: none;
+        font-family: inherit;
+        max-height: 100px;
+      }
+
+      .chat-input button {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: white;
+        border: none;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .chat-input button:hover {
+        background: var(--primary-dark);
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 576px) {
+        .chat-widget.open {
+          width: calc(100% - 30px);
+          height: 60vh;
+          bottom: 20px;
+          right: 15px;
+        }
+      }
+
+      /* Add these CSS styles to your styles.css file */
+      /* MCQ Chatbot Styles */
+      .chat-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 10px 0;
+        width: 100%;
+      }
+
+      .chat-option-btn {
+        background-color: var(--light-95);
+        border: 1px solid var(--gray-light);
+        border-radius: 18px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        color: var(--dark-75);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: left;
+      }
+
+      .chat-option-btn:hover {
+        background-color: var(--light);
+        border-color: var(--primary-light);
+        transform: translateY(-2px);
+      }
+
+      .typing-dots {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 5px;
+      }
+
+      .typing-dots span {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--dark-50);
+        animation: typingAnimation 1s infinite ease-in-out;
+      }
+
+      .typing-dots span:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .typing-dots span:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes typingAnimation {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+      }
+
+      /* Chat Form Styles */
+      .chat-form {
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .chat-form-group {
+        margin-bottom: 10px;
+      }
+
+      .chat-form-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--gray-light);
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 0.9rem;
+      }
+
+      .chat-form-input:focus {
+        outline: none;
+        border-color: var(--primary);
+      }
+
+      .chat-form-submit {
+        width: 100%;
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        padding: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .chat-form-submit:hover {
+        background-color: var(--primary-dark);
+      }
+
+      /* Add this to your styles.css */
+      /* Cookie Consent Banner */
+      .cookie-banner {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: var(--z-index-modal);
+        padding: 15px 20px;
+        transition: bottom 0.5s ease;
+      }
+
+      .cookie-banner.show {
+        bottom: 0;
+      }
+
+      .cookie-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .cookie-text {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .cookie-text i {
+        font-size: 2rem;
+        color: var(--primary);
+      }
+
+      .cookie-text p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--dark-50);
+      }
+
+      .cookie-buttons {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+
+      .btn-sm {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+
+      @media (max-width: 768px) {
+        .cookie-content {
+          flex-direction: column;
+        }
+
+        .cookie-text {
+          text-align: center;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .cookie-buttons {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Top-bar -->
+    <div class="top-bar">
+      <div class="top-bar-container">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <i class="fas fa-phone-alt"></i> +91 7992281130
+          </div>
+          <span class="separator">|</span>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i> info@suviksan.com
+          </div>
+        </div>
+        <div class="social-links">
+          <span>Follow Us:</span>
+          <div class="social-links-list">
+            <a
+              href="https://www.facebook.com/SuviksanTechnologies"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/Suviksan_Tech" aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/suviksantechnologies/#"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/company/suviksan-technologies-private-limited"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+      <div class="navbar-container">
+        <a href="index.html" class="logo" aria-label="Suviksan Technologies">
+          <img src="assets/logo.png" alt="Suviksan Logo" />
+        </a>
+        <ul class="nav-links" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown" data-dropdown="about">
+            <a href="#" aria-expanded="false"
+              >About Us <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu" aria-label="About Us submenu">
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="our_team.html">Leadership Team</a></li>
+              <li><a href="clients.html">Our Clients</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" data-dropdown="services">
+            <a href="#" aria-expanded="false"
+              >Services <i class="fas fa-caret-down"></i
+            ></a>
+            <ul
+              class="dropdown-menu services-dropdown"
+              aria-label="Services submenu"
+            >
+              <li>
+                <a href="#cybersecurity"
+                  ><i class="fas fa-shield-alt"></i> Cybersecurity</a
+                >
+              </li>
+              <li>
+                <a href="#it-consulting"
+                  ><i class="fas fa-briefcase"></i> IT Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#software-solutions"
+                  ><i class="fas fa-code"></i> Software Solutions</a
+                >
+              </li>
+              <li>
+                <a href="data_analytics.html"
+                  ><i class="fas fa-chart-bar"></i> Data Analytics</a
+                >
+              </li>
+              <li>
+                <a href="#cloud-services"
+                  ><i class="fas fa-cloud"></i> Cloud Services</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <button
+          class="btn-toggle-menu"
+          id="toggleMenu"
+          aria-label="Toggle Menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="clients-hero">
+      <div class="hero-shapes">
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="hero-shape hero-shape-3"></div>
+        <div class="hero-shape hero-shape-4"></div>
+      </div>
+      <div class="clients-hero-content">
+        <h1>Our Valued Clients & Partners</h1>
+        <p>
+          We take pride in the relationships we've built with industry leaders
+          across the globe. Together, we innovate, transform, and achieve
+          remarkable results.
+        </p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">150+</div>
+            <div class="hero-stat-text">Happy Clients</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">98%</div>
+            <div class="hero-stat-text">Client Retention</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">5+</div>
+            <div class="hero-stat-text">Countries</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="client-logos-section">
+      <div class="client-logos-content">
+        <h2>We Work With The Best</h2>
+        <p>
+          Our clients range from global enterprises to emerging startups across
+          diverse industries. Here are some of our trusted partners who have
+          transformed their businesses with our expertise.
+        </p>
+      </div>
+
+      <div class="client-logos-container">
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/ikea.jpg" alt="IKEA" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/bhel.jpg" alt="BHEL" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/godrej.jpg" alt="Godrej" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img
+            src="assets/logos/capgemini.jpg"
+            alt="CAPGEMINI"
+            loading="lazy"
+          />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/siemens.jpg" alt="SIEMENS" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/magnit.png" alt="MAGNIT" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/hcl.png" alt="HCL" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/hp.png" alt="HP" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img src="assets/logos/tcs.png" alt="TCS" loading="lazy" />
+        </div>
+        <div class="client-logo-item client-logo-animation">
+          <img
+            src="assets/logos/microsoft.png"
+            alt="Microsoft"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section">
+      <div class="success-stories-content">
+        <h2>Client Success Stories</h2>
+        <p>
+          Discover how our solutions have helped businesses across various
+          industries overcome challenges, optimize operations, and drive growth.
+        </p>
+      </div>
+
+      <div class="stories-tabs">
+        <button class="stories-tab-button active" data-filter="all">
+          All Stories
+        </button>
+        <button class="stories-tab-button" data-filter="it">
+          IT Solutions
+        </button>
+        <button class="stories-tab-button" data-filter="cyber">
+          Cybersecurity
+        </button>
+        <button class="stories-tab-button" data-filter="data">
+          Data Analytics
+        </button>
+        <button class="stories-tab-button" data-filter="cloud">
+          Cloud Services
+        </button>
+      </div>
+
+      <div class="success-story-cards">
+        <div class="success-story-card animate-on-scroll" data-category="it">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story1.png"
+              alt="IT Infrastructure Transformation"
+              loading="lazy"
+            />
+            <span class="story-card-category">IT Solutions</span>
+          </div>
+          <div class="story-card-content">
+            <h3>IT Infrastructure Transformation</h3>
+            <p class="story-card-description">
+              Helped a leading manufacturing company modernize their legacy IT
+              infrastructure, reducing operational costs by 35% and improving
+              system reliability.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/bhel.jpg"
+                  alt="BHEL"
+                />
+                <span class="story-company-name">BHEL</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story-card animate-on-scroll" data-category="cyber">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story2.jpg"
+              alt="Advanced Threat Protection"
+              loading="lazy"
+            />
+            <span class="story-card-category">Cybersecurity</span>
+          </div>
+          <div class="story-card-content">
+            <h3>Advanced Threat Protection</h3>
+            <p class="story-card-description">
+              Implemented a comprehensive cybersecurity framework for a
+              financial institution, preventing potential data breaches and
+              ensuring regulatory compliance.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/godrej.jpg"
+                  alt="Godrej"
+                />
+                <span class="story-company-name">Godrej</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story-card animate-on-scroll" data-category="data">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story3.jpg"
+              alt="Data-Driven Decision Making"
+              loading="lazy"
+            />
+            <span class="story-card-category">Data Analytics</span>
+          </div>
+          <div class="story-card-content">
+            <h3>Data-Driven Decision Making</h3>
+            <p class="story-card-description">
+              Developed a custom analytics solution for a retail chain that
+              increased sales by 22% through improved inventory management and
+              customer insights.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/ikea.jpg"
+                  alt="IKEA"
+                />
+                <span class="story-company-name">IKEA</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story-card animate-on-scroll" data-category="cloud">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story4.jpg"
+              alt="Cloud Migration Excellence"
+              loading="lazy"
+            />
+            <span class="story-card-category">Cloud Services</span>
+          </div>
+          <div class="story-card-content">
+            <h3>Cloud Migration Excellence</h3>
+            <p class="story-card-description">
+              Successfully migrated a healthcare provider's critical
+              applications to the cloud, improving scalability and reducing
+              infrastructure costs by 40%.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/capgemini.jpg"
+                  alt="CAPGEMINI"
+                />
+                <span class="story-company-name">CAPGEMINI</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story-card animate-on-scroll" data-category="it">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story5.jpg"
+              alt="Digital Workplace Transformation"
+              loading="lazy"
+            />
+            <span class="story-card-category">IT Solutions</span>
+          </div>
+          <div class="story-card-content">
+            <h3>Digital Workplace Transformation</h3>
+            <p class="story-card-description">
+              Designed and implemented a modern digital workplace solution that
+              enhanced employee productivity and collaboration in a global
+              manufacturing firm.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/siemens.jpg"
+                  alt="SIEMENS"
+                />
+                <span class="story-company-name">SIEMENS</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="success-story-card animate-on-scroll" data-category="cyber">
+          <div class="story-card-image">
+            <img
+              src="assets/stories/story6.jpg"
+              alt="Security Operations Center"
+              loading="lazy"
+            />
+            <span class="story-card-category">Cybersecurity</span>
+          </div>
+          <div class="story-card-content">
+            <h3>Security Operations Center</h3>
+            <p class="story-card-description">
+              Built a 24/7 Security Operations Center for a multinational
+              company, significantly improving threat detection and reducing
+              incident response time.
+            </p>
+            <div class="story-card-footer">
+              <div class="story-card-company">
+                <img
+                  class="story-company-logo"
+                  src="assets/logos/microsoft.png"
+                  alt="Microsoft"
+                />
+                <span class="story-company-name">Microsoft</span>
+              </div>
+              <a href="#" class="story-card-link"
+                >Read Case Study <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="testimonials-content">
+        <h2>What Our Clients Say</h2>
+        <p>
+          The trust and satisfaction of our clients is our greatest achievement.
+          Here's what some of them have to say about their experience working
+          with Suviksan Technologies.
+        </p>
+      </div>
+
+      <div class="testimonials-slider-container">
+        <div class="testimonials-slider" id="testimonialSlider">
+          <div class="testimonials-slide-track" id="testimonialTrack">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  "Suviksan Technologies has been a true partner in our digital
+                  transformation journey. Their expert team delivered innovative
+                  solutions that have significantly improved our operational
+                  efficiency and customer experience."
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-image">
+                    <img
+                      src="assets/sudhir-kr-singh.jpg"
+                      alt="Rajesh Kumar"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">Rajesh Kumar</div>
+                    <div class="testimonial-author-title">CIO</div>
+                    <div class="testimonial-company">
+                      <img
+                        src="assets/logos/bhel.jpg"
+                        alt="BHEL"
+                        class="testimonial-company-logo"
+                      />
+                      <span class="testimonial-company-name">BHEL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  "The cybersecurity framework implemented by Suviksan has
+                  strengthened our security posture tremendously. Their
+                  proactive approach to threat detection and mitigation has
+                  given us peace of mind in an increasingly complex digital
+                  landscape."
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-image">
+                    <img
+                      src="assets/astha.jpg"
+                      alt="Priya Sharma"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">Priya Sharma</div>
+                    <div class="testimonial-author-title">CISO</div>
+                    <div class="testimonial-company">
+                      <img
+                        src="assets/logos/godrej.jpg"
+                        alt="Godrej"
+                        class="testimonial-company-logo"
+                      />
+                      <span class="testimonial-company-name">Godrej</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-content">
+                  "The data analytics solution provided by Suviksan has
+                  transformed how we understand our customers. We now have
+                  actionable insights that have directly contributed to our
+                  revenue growth. Their team's expertise and commitment to
+                  excellence is outstanding."
+                </div>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-image">
+                    <img
+                      src="assets/vikrantkishore.jpg"
+                      alt="Amit Patel"
+                    />
+                  </div>
+                  <div class="testimonial-author-info">
+                    <div class="testimonial-author-name">Amit Patel</div>
+                    <div class="testimonial-author-title">
+                      Head of Analytics
+                    </div>
+                    <div class="testimonial-company">
+                      <img
+                        src="assets/logos/ikea.jpg"
+                        alt="IKEA"
+                        class="testimonial-company-logo"
+                      />
+                      <span class="testimonial-company-name">IKEA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-navigation">
+          <button
+            class="testimonial-nav-button"
+            id="prevTestimonial"
+            aria-label="Previous testimonial"
+          >
+            <i class="fas fa-arrow-left"></i>
+          </button>
+
+          <div class="testimonial-dots" id="testimonialDots">
+            <span class="testimonial-dot active" data-index="0"></span>
+            <span class="testimonial-dot" data-index="1"></span>
+            <span class="testimonial-dot" data-index="2"></span>
+          </div>
+
+          <button
+            class="testimonial-nav-button"
+            id="nextTestimonial"
+            aria-label="Next testimonial"
+          >
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Presence Section -->
+    <section class="global-presence-section">
+      <div class="global-presence-content">
+        <h2>Our Global Presence</h2>
+        <p>
+          With offices and clients across multiple countries, we provide
+          technology solutions and services on a global scale. Our international
+          presence allows us to understand diverse market needs and deliver
+          localized solutions.
+        </p>
+      </div>
+
+      <div class="global-map-container">
+        <div class="global-map">
+          <img src="assets/world-map.png" alt="World Map" />
+
+          <div class="map-location location-us">
+            <div class="location-tooltip">
+              <div class="location-name">United States</div>
+              <div class="location-address">New York, NY</div>
+            </div>
+          </div>
+
+          <div class="map-location location-india">
+            <div class="location-tooltip">
+              <div class="location-name">India</div>
+              <div class="location-address">Noida, Uttar Pradesh</div>
+            </div>
+          </div>
+
+          <div class="map-location location-uk">
+            <div class="location-tooltip">
+              <div class="location-name">United Kingdom</div>
+              <div class="location-address">London</div>
+            </div>
+          </div>
+
+          <div class="map-location location-germany">
+            <div class="location-tooltip">
+              <div class="location-name">Germany</div>
+              <div class="location-address">Berlin</div>
+            </div>
+          </div>
+
+          <div class="map-location location-japan">
+            <div class="location-tooltip">
+              <div class="location-name">Japan</div>
+              <div class="location-address">Tokyo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner CTA Section -->
+    <section class="partner-cta-section">
+      <div class="partner-cta-content">
+        <h2>Ready to Transform Your Business?</h2>
+        <p>
+          Join our growing list of satisfied clients and experience the Suviksan
+          difference. Let's collaborate to create innovative solutions that
+          drive your business forward.
+        </p>
+
+        <div class="partner-cta-buttons">
+          <a href="#" class="btn btn-primary">Become a Client</a>
+          <a href="#" class="btn btn-outline">Schedule a Consultation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer fade-in">
+      <div class="footer-decoration"></div>
+      <div class="footer-container">
+        <!-- About text -->
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="assets/logo-footer.png" alt="Suviksan Logo" />
+          </a>
+          <p>
+            Suviksan is a highly results‑oriented company that offers
+            personalized, more efficient and cost‑effective cybersecurity
+            services in Germany, Sweden and the Philippines. We're obsessed with
+            discovering the experts who can transform your business and help you
+            fuel life‑changing work.
+          </p>
+          <div class="footer-social">
+            <span class="footer-social-title">Follow Us</span>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/SuviksanTechnologies"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/Suviksan_Tech" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/suviksantechnologies/#"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://in.linkedin.com/company/suviksan-technologies-private-limited"
+                aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Data Analytics</a></li>
+            <li><a href="#">Cyber Security</a></li>
+            <li><a href="#">Data Security</a></li>
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">IT Outsourcing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Corporate Office : Unit No.: 1006, ATS Bouquet NOIDA – 201305,
+              Uttar Pradesh Bharat (India)
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              info@suviksan.com
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              +91 7992281130
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bottom copyright bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Suviksan Technologies | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-header">
+        <div class="chat-title">
+          <i class="fas fa-comments"></i>
+          <span>Chat with us</span>
+        </div>
+        <button class="chat-toggle" id="chatToggle">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="chat-body">
+        <div class="chat-messages" id="chatMessages">
+          <div class="message system">
+            <div class="message-content">
+              <p>
+                Welcome to Suviksan Technologies! How can we help you today?
+              </p>
+              <span class="message-time">Just now</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <textarea
+            id="messageInput"
+            placeholder="Type your message..."
+            rows="1"
+          ></textarea>
+          <button id="sendMessage">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+
+      <button class="chat-button" id="chatButton">
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Add this before the closing </body> tag -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <i class="fas fa-cookie-bite"></i>
+          <p>
+            We use cookies to enhance your experience. By continuing to visit
+            this site you agree to our use of cookies.
+          </p>
+        </div>
+        <div class="cookie-buttons">
+          <button id="cookieAccept" class="btn btn-primary btn-sm">
+            Accept
+          </button>
+          <button id="cookieSettings" class="btn btn-outline btn-sm">
+            Cookie Settings
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        "use strict";
+
+        /**
+         * ===============================
+         * UTILITY FUNCTIONS
+         * ===============================
+         */
+        // Element selector helper
+        const select = (selector, parent = document) => {
+          return parent.querySelector(selector);
+        };
+
+        const selectAll = (selector, parent = document) => {
+          return parent.querySelectorAll(selector);
+        };
+
+        // Event delegation helper
+        const delegate = (element, eventType, selector, handler) => {
+          element.addEventListener(eventType, function (event) {
+            const target = event.target.closest(selector);
+            if (target && element.contains(target)) {
+              handler.call(target, event);
+            }
+          });
+        };
+
+        // Check if element is in viewport
+        const isInViewport = (element, offset = 0) => {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top <= window.innerHeight - offset && rect.bottom >= offset
+          );
+        };
+
+        // Throttle function for scroll events
+        const throttle = (func, delay) => {
+          let lastCall = 0;
+          return function (...args) {
+            const now = new Date().getTime();
+            if (now - lastCall < delay) {
+              return;
+            }
+            lastCall = now;
+            return func(...args);
+          };
+        };
+
+        /**
+         * ===============================
+         * NAVIGATION & MENU HANDLING
+         * ===============================
+         */
+        // Mobile menu toggle
+        const toggleMenu = select("#toggleMenu");
+        const navMenu = select("#navMenu");
+        const navbar = select("#mainNav");
+        const dropdowns = selectAll(".dropdown");
+
+        if (toggleMenu && navMenu) {
+          toggleMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            toggleMenu.setAttribute(
+              "aria-expanded",
+              toggleMenu.getAttribute("aria-expanded") === "true"
+                ? "false"
+                : "true"
+            );
+
+            // Change icon based on menu state
+            const icon = toggleMenu.querySelector("i");
+            if (navMenu.classList.contains("active")) {
+              icon.classList.remove("fa-bars");
+              icon.classList.add("fa-times");
+            } else {
+              icon.classList.add("fa-bars");
+              icon.classList.remove("fa-times");
+            }
+          });
+        }
+
+        // Handle dropdowns on mobile
+        dropdowns.forEach((dropdown) => {
+          const link = dropdown.querySelector("a");
+          link.addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              dropdown.classList.toggle("active");
+              link.setAttribute(
+                "aria-expanded",
+                dropdown.classList.contains("active") ? "true" : "false"
+              );
+            }
+          });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener("click", (e) => {
+          if (
+            navMenu &&
+            navMenu.classList.contains("active") &&
+            !e.target.closest("#navMenu") &&
+            !e.target.closest("#toggleMenu")
+          ) {
+            navMenu.classList.remove("active");
+            toggleMenu.setAttribute("aria-expanded", "false");
+            const icon = toggleMenu.querySelector("i");
+            icon.classList.add("fa-bars");
+            icon.classList.remove("fa-times");
+          }
+        });
+
+        // Sticky navbar handling with throttling
+        let lastScrollTop = 0;
+        const scrollThreshold = 60;
+
+        const handleNavbarScroll = throttle(() => {
+          const currentScrollTop =
+            window.scrollY || document.documentElement.scrollTop;
+
+          if (currentScrollTop > scrollThreshold) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+
+          lastScrollTop = currentScrollTop;
+        }, 10); // 10ms throttle for smooth effect
+
+        window.addEventListener("scroll", handleNavbarScroll);
+
+        /**
+         * ===============================
+         * TESTIMONIAL SLIDER
+         * ===============================
+         */
+        const testimonialSlider = select("#testimonialSlider");
+
+        if (testimonialSlider) {
+          const track = select("#testimonialTrack");
+          const slides = selectAll(".testimonial-slide", testimonialSlider);
+          const dotsContainer = select("#testimonialDots");
+          const dots = selectAll(".testimonial-dot", dotsContainer);
+          const prevBtn = select("#prevTestimonial");
+          const nextBtn = select("#nextTestimonial");
+
+          let currentIndex = 0;
+          const slideWidth = 100; // 100% width
+          let slideInterval;
+
+          // Function to go to specific slide
+          const goToSlide = (index) => {
+            if (index < 0) {
+              index = slides.length - 1;
+            } else if (index >= slides.length) {
+              index = 0;
+            }
+
+            // Update transform
+            track.style.transform = `translateX(-${index * slideWidth}%)`;
+
+            // Update dots
+            dots.forEach((dot, i) => {
+              dot.classList.toggle("active", i === index);
+            });
+
+            currentIndex = index;
+
+            // Reset interval
+            clearInterval(slideInterval);
+            slideInterval = setInterval(
+              () => goToSlide(currentIndex + 1),
+              5000
+            );
+          };
+
+          // Set up navigation buttons
+          if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+              goToSlide(currentIndex - 1);
+            });
+          }
+
+          if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+              goToSlide(currentIndex + 1);
+            });
+          }
+
+          // Set up dots
+          dots.forEach((dot) => {
+            dot.addEventListener("click", function () {
+              const index = parseInt(this.getAttribute("data-index"));
+              goToSlide(index);
+            });
+          });
+
+          // Initialize slider
+          goToSlide(0);
+
+          // Touch events for swipe support
+          let touchStartX = 0;
+          let touchEndX = 0;
+
+          testimonialSlider.addEventListener(
+            "touchstart",
+            (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+            },
+            { passive: true }
+          );
+
+          testimonialSlider.addEventListener(
+            "touchend",
+            (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              handleSwipe();
+            },
+            { passive: true }
+          );
+
+          const handleSwipe = () => {
+            const threshold = 50; // Minimum swipe distance
+            if (touchEndX < touchStartX - threshold) {
+              goToSlide(currentIndex + 1); // Swipe left, go to next
+            } else if (touchEndX > touchStartX + threshold) {
+              goToSlide(currentIndex - 1); // Swipe right, go to previous
+            }
+          };
+        }
+
+        /**
+         * ===============================
+         * STORY FILTER TABS
+         * ===============================
+         */
+        const storyTabs = selectAll(".stories-tab-button");
+        const storyCards = selectAll(".success-story-card");
+
+        if (storyTabs.length && storyCards.length) {
+          storyTabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              // Remove active class from all tabs
+              storyTabs.forEach((t) => t.classList.remove("active"));
+
+              // Add active class to clicked tab
+              this.classList.add("active");
+
+              // Get filter value
+              const filter = this.getAttribute("data-filter");
+
+              // Filter story cards
+              storyCards.forEach((card) => {
+                if (
+                  filter === "all" ||
+                  card.getAttribute("data-category") === filter
+                ) {
+                  card.style.display = "";
+
+                  // Trigger animation again
+                  setTimeout(() => {
+                    card.classList.add("animated");
+                  }, 100);
+                } else {
+                  card.style.display = "none";
+                  card.classList.remove("animated");
+                }
+              });
+            });
+          });
+        }
+
+        /**
+         * ===============================
+         * SCROLL ANIMATIONS
+         * ===============================
+         */
+        const animateOnScroll = throttle(() => {
+          const elementsToAnimate = selectAll(
+            ".animate-on-scroll:not(.animated)"
+          );
+          const clientLogoAnimations = selectAll(
+            ".client-logo-animation:not(.animated)"
+          );
+
+          elementsToAnimate.forEach((element) => {
+            if (isInViewport(element, 100)) {
+              element.classList.add("animated");
+            }
+          });
+
+          clientLogoAnimations.forEach((logo) => {
+            if (isInViewport(logo, 100)) {
+              logo.classList.add("animated");
+            }
+          });
+
+          // Show scroll-to-top button when scrolled down
+          const scrollTop =
+            window.scrollY || document.documentElement.scrollTop;
+          const scrollToTopBtn = select("#scrollToTop");
+
+          if (scrollToTopBtn) {
+            if (scrollTop > 600) {
+              scrollToTopBtn.classList.add("visible");
+            } else {
+              scrollToTopBtn.classList.remove("visible");
+            }
+          }
+        }, 100);
+
+        // Set up scroll event listener
+        window.addEventListener("scroll", animateOnScroll);
+        window.addEventListener("resize", animateOnScroll);
+
+        // Initial check for animations
+        setTimeout(animateOnScroll, 300);
+
+        // Scroll to top button
+        const scrollToTopBtn = select("#scrollToTop");
+        if (scrollToTopBtn) {
+          scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+
+        /**
+         * ===============================
+         * SMOOTH SCROLL FOR ANCHOR LINKS
+         * ===============================
+         */
+        const scrollToSection = (e) => {
+          const href = e.target.getAttribute("href");
+
+          // Only handle internal anchor links
+          if (href && href.startsWith("#") && href !== "#") {
+            const targetSection = select(href);
+
+            if (targetSection) {
+              e.preventDefault(5);
+
+              // Close mobile menu if open
+              if (navMenu && navMenu.classList.contains("active")) {
+                navMenu.classList.remove("active");
+                toggleMenu.setAttribute("aria-expanded", "false");
+                const icon = toggleMenu.querySelector("i");
+                icon.classList.add("fa-bars");
+                icon.classList.remove("fa-times");
+              }
+
+              // Calculate offset with navbar height
+              const navbarHeight = navbar ? navbar.offsetHeight : 0;
+              const targetPosition =
+                targetSection.getBoundingClientRect().top +
+                window.scrollY -
+                navbarHeight;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          }
+        };
+
+        delegate(
+          document,
+          "click",
+          'a[href^="#"]:not([href="#"])',
+          scrollToSection
+        );
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

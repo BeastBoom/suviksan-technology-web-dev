@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Suviksan Technologies - Leading technology consulting and services company"
+    />
+    <meta
+      name="keywords"
+      content="IT solutions, cybersecurity, data analytics, IT services"
+    />
+    <title>Suviksan Technologies</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Top‑bar - FIXED: shorter height -->
+    <div class="top-bar">
+      <div class="top-bar-container">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <i class="fas fa-phone-alt"></i> +91 7992281130
+          </div>
+          <span class="separator">|</span>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i> info@suviksan.com
+          </div>
+        </div>
+        <div class="social-links">
+          <span>Follow Us:</span>
+          <div class="social-links-list">
+            <a href="https://www.facebook.com/SuviksanTechnologies" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/Suviksan_Tech" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/suviksantechnologies/#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://in.linkedin.com/company/suviksan-technologies-private-limited" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="mainNav">
+      <div class="navbar-container">
+        <a href="index.html" class="logo" aria-label="Suviksan Technologies">
+          <img src="assets/logo.png" alt="Suviksan Logo" />
+        </a>
+        <ul class="nav-links" id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown" data-dropdown="about">
+            <a href="#" aria-expanded="false"
+              >About Us <i class="fas fa-caret-down"></i
+            ></a>
+            <ul class="dropdown-menu" aria-label="About Us submenu">
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="our_team.html">Leadership Team</a></li>
+              <li><a href="clients.html">Our Clients</a></li>
+            </ul>
+          </li>
+          <li class="dropdown" data-dropdown="services">
+            <a href="#" aria-expanded="false"
+              >Services <i class="fas fa-caret-down"></i
+            ></a>
+            <ul
+              class="dropdown-menu services-dropdown"
+              aria-label="Services submenu"
+            >
+              <li>
+                <a href="#cybersecurity"
+                  ><i class="fas fa-shield-alt"></i> Cybersecurity</a
+                >
+              </li>
+              <li>
+                <a href="#it-consulting"
+                  ><i class="fas fa-briefcase"></i> IT Consulting</a
+                >
+              </li>
+              <li>
+                <a href="#software-solutions"
+                  ><i class="fas fa-code"></i> Software Solutions</a
+                >
+              </li>
+              <li>
+                <a href="data_analytics.html"
+                  ><i class="fas fa-chart-bar"></i> Data Analytics</a
+                >
+              </li>
+              <li>
+                <a href="#cloud-services"
+                  ><i class="fas fa-cloud"></i> Cloud Services</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="nav-cta">
+            <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+          </li>
+        </ul>
+        <button
+          class="btn-toggle-menu"
+          id="toggleMenu"
+          aria-label="Toggle Menu"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero carousel - FIXED: center text block, removed arrows -->
+    <header class="hero modern-hero" aria-label="Featured presentations">
+      <div
+        class="hero-background"
+        style="background-image: url('assets/hero1.jpg')"
+      >
+        <div class="overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="animate-text">Transforming Business Through Technology</h1>
+          <p class="animate-text delay-1">
+            Strategic IT solutions designed for tomorrow's challenges
+          </p>
+
+          <div class="hero-cta-group animate-text delay-2">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#contact" class="btn btn-outline btn-light">Contact Us</a>
+            <a href="#" class="text-link"
+              ><i class="fas fa-play-circle"></i> Watch our story</a
+            >
+          </div>
+
+          <div class="hero-stats animate-text delay-3">
+            <div class="hero-stat">
+              <span class="counter" data-target="5">0<sup>+</sup></span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="hero-stat">
+              <span class="counter" data-target="100">0<sup>+</sup></span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="hero-stat">
+              <span class="counter" data-target="3">0<sup>+</sup></span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <a href="about.html">
+          <span class="scroll-text">Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- About / Intro - NO CHANGES NEEDED -->
+    <!-- Replace the entire About section in your HTML -->
+    <section id="about" class="about section fade-in">
+      <div class="about-container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>Suviksan Technologies</h2>
+            <div class="about-underline"></div>
+
+            <p>
+              Suviksan Technologies is a leading technology consulting and
+              services company focused on creating innovative solutions that
+              address clients' most complex digital transformation needs. With
+              over 3+ years of experience managing global business systems and
+              operations, we expertly lead clients in over 5 countries. Our
+              operations employ high‑caliber technology professionals focused on
+              helping clients address their core challenges and seize market
+              opportunities.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature">
+                <div class="feature-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Best IT Services</h3>
+                  <p>
+                    Proven track record of successful IT Services delivered.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-feature">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Highly Dedicated</h3>
+                  <p>
+                    Our professionals exhibit unwavering commitment to client
+                    success.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-buttons">
+              <a href="#" class="btn btn-outline">EXPLORE MORE</a>
+              <a href="#contact" class="btn btn-primary">CONTACT US</a>
+            </div>
+          </div>
+
+          <div class="about-image-container">
+            <div class="about-image fade-in delay-1">
+              <img src="assets/team.jpg" alt="Team at work" />
+            </div>
+            <div class="years-overlay">
+              <div class="years-content">
+                <span class="years-number">3+</span>
+                <span class="years-text">Years</span>
+                <span class="years-subtext">Experience</span>
+              </div>
+            </div>
+            <div class="dot-pattern top-right"></div>
+            <div class="dot-pattern bottom-left"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Highlights -->
+    <section class="features section">
+      <div class="features-container">
+        <div class="feature-card fade-in delay-2">
+          <i class="fas fa-server"></i>
+          <h3>Best IT Services</h3>
+          <p>
+            Proven track record of successful IT Services delivered with
+            excellence and precision.
+          </p>
+        </div>
+        <div class="feature-card fade-in delay-3">
+          <i class="fas fa-users"></i>
+          <h3>Highly Dedicated</h3>
+          <p>
+            Our professionals exhibit unwavering commitment to client success
+            and satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients carousel -->
+    <section id="clients" class="clients section">
+      <div class="clients-content fade-in">
+        <h2>Our Clients</h2>
+        <p>
+          We partner with industry leaders across the globe to deliver
+          exceptional results...
+        </p>
+      </div>
+
+      <div class="clients-marquee fade-in">
+        <ul class="logo-grid">
+          <li><img src="assets/logos/ikea.jpg" alt="IKEA" loading="lazy" /></li>
+          <li><img src="assets/logos/bhel.jpg" alt="BHEL" loading="lazy" /></li>
+          <li>
+            <img src="assets/logos/godrej.jpg" alt="Godrej" loading="lazy" />
+          </li>
+          <li>
+            <img
+              src="assets/logos/capgemini.jpg"
+              alt="CAPGEMINI"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img src="assets/logos/siemens.jpg" alt="SIEMENS" loading="lazy" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services gallery - FIXED: Added visible text blocks -->
+    <section id="services" class="services section fade-in delay-1">
+      <h2>IT Solutions, Right at Your Fingertips</h2>
+      <div class="services-container">
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="assets/services/consulting.jpg" alt="IT Outsourcing" />
+            <div class="service-card-content">
+              <h4>IT Outsourcing</h4>
+              <p class="service-card-description">
+                Leverage our expertise to optimize your IT operations and reduce
+                costs.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/services/analytics.jpg" alt="Data Analytics" />
+            <div class="service-card-content">
+              <h4>Data Analytics</h4>
+              <p class="service-card-description">
+                Turn your data into actionable insights that drive business
+                decisions.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/services/security.jpg" alt="Cyber Security" />
+            <div class="service-card-content">
+              <h4>Cyber Security</h4>
+              <p class="service-card-description">
+                Comprehensive protection against evolving digital threats.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <img src="assets/services/data-security.jpg" alt="Data Security" />
+            <div class="service-card-content">
+              <h4>Data Security</h4>
+              <p class="service-card-description">
+                Safeguard your sensitive information with advanced security
+                protocols.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats section fade-in">
+      <div class="stats-container">
+        <div class="stat">
+          <div class="stat-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="counter" data-target="5">0<sup>+</sup></h3>
+          <p>Countries</p>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="counter" data-target="100">0<sup>+</sup></h3>
+          <p>Employees</p>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="counter" data-target="40">0<sup>+</sup></h3>
+          <p>Professionals</p>
+        </div>
+        <div class="stat">
+          <div class="stat-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3 class="counter" data-target="3">0<sup>+</sup></h3>
+          <p>Yrs Of Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience - FIXED: Improved pie chart filling -->
+    <section class="experience section">
+      <div class="experience-content">
+        <h2>Experience</h2>
+        <div class="charts">
+          <div class="chart-pie">
+            <div class="pie-chart">
+              <div class="chart-title">Business Setup</div>
+              <div class="pie-progress" data-percentage="100"></div>
+              <div class="chart-percent">100 %</div>
+            </div>
+          </div>
+          <div class="chart-pie">
+            <div class="pie-chart">
+              <div class="chart-title">IT & Software</div>
+              <div class="pie-progress" data-percentage="80"></div>
+              <div class="chart-percent">80 %</div>
+            </div>
+          </div>
+          <div class="chart-pie">
+            <div class="pie-chart">
+              <div class="chart-title">Corporate Advisory</div>
+              <div class="pie-progress" data-percentage="70"></div>
+              <div class="chart-percent">70 %</div>
+            </div>
+          </div>
+          <div class="chart-pie">
+            <div class="pie-chart">
+              <div class="chart-title">Audit & Assurance</div>
+              <div class="pie-progress" data-percentage="80"></div>
+              <div class="chart-percent">80 %</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="blog section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Latest Insights</h2>
+          <p>Stay updated with our latest news and industry insights</p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="assets/blog/blog-1.jpg"
+                alt="Cybersecurity Trends"
+                loading="lazy"
+              />
+              <div class="blog-category">Cybersecurity</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> April 18, 2025</span>
+                <span><i class="far fa-user"></i> Admin</span>
+              </div>
+              <h3>
+                <a href="#"
+                  >2025 Cybersecurity Trends Every Business Should Know</a
+                >
+              </h3>
+              <p>
+                Explore the evolving landscape of cyber threats and how to build
+                resilient defense systems.
+              </p>
+              <a href="#" class="blog-read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="assets/blog/blog-2.jpg"
+                alt="Data Analytics"
+                loading="lazy"
+              />
+              <div class="blog-category">Analytics</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> April 10, 2025</span>
+                <span><i class="far fa-user"></i> Admin</span>
+              </div>
+              <h3>
+                <a href="#">Leveraging Data Analytics for Business Growth</a>
+              </h3>
+              <p>
+                How predictive analytics and business intelligence can transform
+                your decision-making process.
+              </p>
+              <a href="#" class="blog-read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-image">
+              <img
+                src="assets/blog/blog-3.jpg"
+                alt="Cloud Migration"
+                loading="lazy"
+              />
+              <div class="blog-category">Cloud</div>
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> March 28, 2025</span>
+                <span><i class="far fa-user"></i> Admin</span>
+              </div>
+              <h3>
+                <a href="#"
+                  >Successful Cloud Migration: Key Steps and Strategies</a
+                >
+              </h3>
+              <p>
+                Best practices for seamless cloud migration without disrupting
+                your business operations.
+              </p>
+              <a href="#" class="blog-read-more"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="blog-cta">
+          <a href="#" class="btn btn-outline">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact - FIXED: Select Services label -->
+    <section id="contact" class="contact section fade-in">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <!-- left: image -->
+        <div class="contact-image">
+          <img src="assets/contact.jpg" alt="Office team at work" />
+        </div>
+
+        <!-- right: form -->
+        <form class="contact-form" id="contactForm" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+              <label for="name" class="form-label">Name</label>
+              <div class="form-feedback"></div>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+              <label for="email" class="form-label">Email</label>
+              <div class="form-feedback"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+              />
+              <label for="phone" class="form-label">Phone Number</label>
+              <div class="form-feedback"></div>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" class="form-control" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="it-solutions">IT Solutions</option>
+                <option value="corporate-advisory">Corporate Advisory</option>
+                <option value="audit-assurance">Audit &amp; Assurance</option>
+              </select>
+              <label for="service" class="form-label">Select Services</label>
+              <div class="form-feedback"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              class="form-control"
+              placeholder="Message"
+              required
+            ></textarea>
+            <label for="message" class="form-label">Message</label>
+            <div class="form-feedback"></div>
+          </div>
+
+          <div class="form-footer">
+            <div class="form-disclaimer">
+              By submitting this form, you agree to our privacy policy and terms
+              of service.
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Add this before the footer in your HTML -->
+    <section class="newsletter fade-in">
+      <div class="newsletter-container">
+        <div class="newsletter-content">
+          <h2>Stay Updated</h2>
+          <p>
+            Subscribe to our newsletter for latest updates, industry insights
+            and special offers.
+          </p>
+          <form id="newsletterForm" class="newsletter-form">
+            <div class="newsletter-input-group">
+              <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit">
+                <span>Subscribe</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+            <div class="newsletter-privacy">
+              <input type="checkbox" id="privacyConsent" required />
+              <label for="privacyConsent"
+                >I agree to receive newsletters and accept the
+                <a href="#">Privacy Policy</a></label
+              >
+            </div>
+            <div class="newsletter-message" id="newsletterMessage"></div>
+          </form>
+        </div>
+        <div class="newsletter-decoration">
+          <i class="fas fa-envelope-open-text"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer fade-in">
+      <div class="footer-decoration"></div>
+      <div class="footer-container">
+        <!-- About text -->
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <img src="assets/logo-footer.png" alt="Suviksan Logo" />
+          </a>
+          <p>
+            Suviksan is a highly results‑oriented company that offers
+            personalized, more efficient and cost‑effective cybersecurity
+            services in Germany, Sweden and the Philippines. We're obsessed with
+            discovering the experts who can transform your business and help you
+            fuel life‑changing work.
+          </p>
+          <div class="footer-social">
+            <span class="footer-social-title">Follow Us</span>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/SuviksanTechnologies" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/Suviksan_Tech" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/suviksantechnologies/#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://in.linkedin.com/company/suviksan-technologies-private-limited" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Data Analytics</a></li>
+            <li><a href="#">Cyber Security</a></li>
+            <li><a href="#">Data Security</a></li>
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">IT Outsourcing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              Corporate Office : Unit No.: 1006, ATS Bouquet NOIDA – 201305,
+              Uttar Pradesh Bharat (India)
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              info@suviksan.com
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              +91 7992281130
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bottom copyright bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Suviksan Technologies | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Add this before the closing </body> tag in your HTML -->
+    <div class="chat-widget" id="chatWidget">
+      <div class="chat-header">
+        <div class="chat-title">
+          <i class="fas fa-comments"></i>
+          <span>Chat with us</span>
+        </div>
+        <button class="chat-toggle" id="chatToggle">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="chat-body">
+        <div class="chat-messages" id="chatMessages">
+          <div class="message system">
+            <div class="message-content">
+              <p>
+                Welcome to Suviksan Technologies! How can we help you today?
+              </p>
+              <span class="message-time">Just now</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <textarea
+            id="messageInput"
+            placeholder="Type your message..."
+            rows="1"
+          ></textarea>
+          <button id="sendMessage">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+
+      <button class="chat-button" id="chatButton">
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Add this before the closing </body> tag -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <div class="cookie-text">
+          <i class="fas fa-cookie-bite"></i>
+          <p>
+            We use cookies to enhance your experience. By continuing to visit
+            this site you agree to our use of cookies.
+          </p>
+        </div>
+        <div class="cookie-buttons">
+          <button id="cookieAccept" class="btn btn-primary btn-sm">
+            Accept
+          </button>
+          <button id="cookieSettings" class="btn btn-outline btn-sm">
+            Cookie Settings
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Synchronous Stats Counter Animation
+      (function () {
+        // Find all counter elements
+        const counters = document.querySelectorAll(".counter");
+        if (!counters.length) return;
+
+        // Find the maximum target value to calculate duration
+        let maxTarget = 0;
+        counters.forEach((counter) => {
+          const target = parseInt(counter.getAttribute("data-target"));
+          if (target > maxTarget) {
+            maxTarget = target;
+          }
+          // Initialize all counters to 0 with visible plus sign
+          counter.innerHTML = `0<sup>+</sup>`;
+        });
+
+        // Animation settings
+        const duration = 2000; // 2 seconds for all animations
+        const frameDuration = 1000 / 60; // 60fps
+        const totalFrames = Math.round(duration / frameDuration);
+
+        // Start time for the animation
+        let startTime;
+
+        // Animation function
+        function animate(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsedTime = timestamp - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+
+          // Update all counters with the same progress percentage
+          counters.forEach((counter) => {
+            const target = parseInt(counter.getAttribute("data-target"));
+            const currentValue = Math.floor(progress * target);
+            counter.innerHTML = `${currentValue}<sup>+</sup>`;
+
+            // If complete, ensure the final value is correct
+            if (progress === 1) {
+              counter.innerHTML = `${target}<sup>+</sup>`;
+            }
+          });
+
+          // Continue animation if not complete
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
+        }
+
+        // Start the animation
+        function startAnimation() {
+          requestAnimationFrame(animate);
+        }
+
+        // Start immediately
+        startAnimation();
+
+        // Also trigger on window load as a fallback
+        window.addEventListener("load", () => {
+          // Reset and restart animation if needed
+          startTime = null;
+          startAnimation();
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
